@@ -18,6 +18,6 @@ const onTimeUpdate = function () {
     localStorage.setItem(STORAGE_KEY, seconds);
   });
 };
-player.on('timeupdate', throttle(onTimeUpdate, (wait = 1000)));
+player.on('timeupdate', throttle(onTimeUpdate, wait = 1000));
 // ? // При зміні поточного тайму перегляду записав нові значення в сховище
 // ? Та
