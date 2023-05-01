@@ -1,5 +1,4 @@
 // *
-// localStorage.clear()
 import Player from '@vimeo/player';
 import { isNumber, throttle, wait } from 'lodash';
 // *
