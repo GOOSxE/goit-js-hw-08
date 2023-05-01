@@ -1,5 +1,5 @@
 // * 
-import { throttle } from 'lodash';
+import throttle from 'lodash.throttle';
 // *
 const inputFormUrl = document.querySelector('.feedback-form');
 const emailInputUrl = document.querySelector('input');
