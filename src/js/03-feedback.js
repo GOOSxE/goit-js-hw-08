@@ -20,7 +20,7 @@ if (localStorage.getItem(FORM_STORAGE_KEY)) {
 }
 // ? // Після перевірки на наявність даних в сховищі - додаються значення в інпути
 
-inputFormUrl.addEventListener('input', throttle(onFormInput, (wait = 500)));
+inputFormUrl.addEventListener('input', throttle(onFormInput, 500));
 
 function onFormInput(event) {
   if (event.target.name === 'email' || event.target.name === 'message') {
