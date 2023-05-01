@@ -38,8 +38,7 @@ function onFormSubmit(event) {
   event.preventDefault();
   console.log(localStorage.getItem(FORM_STORAGE_KEY));
   localStorage.clear();
-  emailInputUrl.value = '';
-  messageInputUrl.value = '';
+  inputFormUrl.reset()
 }
 // ? // При сабміті форми функція виводить поточні значення інпутів в консоль
 // ? Після чого очищується сховище та інпути 

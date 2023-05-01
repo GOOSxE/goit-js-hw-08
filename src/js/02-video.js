@@ -1,6 +1,7 @@
 // *
+// localStorage.clear()
 import Player from '@vimeo/player';
-import throttle from 'lodash';
+import { isNumber, throttle, wait } from 'lodash';
 // *
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
@@ -17,6 +18,6 @@ const onTimeUpdate = function () {
     localStorage.setItem(STORAGE_KEY, seconds);
   });
 };
-player.on('timeupdate', throttle(onTimeUpdate, [(wait = 1000)]));
+player.on('timeupdate', throttle(onTimeUpdate, (wait = 1000)));
 // ? // При зміні поточного тайму перегляду записав нові значення в сховище
 // ? Та
