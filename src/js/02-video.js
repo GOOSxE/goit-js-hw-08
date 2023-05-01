@@ -1,6 +1,6 @@
 // *
 import Player from '@vimeo/player';
-import { isNumber, throttle, wait } from 'lodash';
+import { isNumber, throttle} from 'lodash';
 // *
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
